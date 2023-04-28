@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -12,13 +14,14 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./js/header.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-          <img src="./images/logofiablescomputer.jpeg" alt="Logo">
+          <img id="img1" src="./images/logofiablescomputer.jpeg" alt="Logo">
+          <img id="img2" src="./images/logofiablesmobile.jpeg" alt="">
         </div>
         <nav>
           <ul>
@@ -26,6 +29,9 @@
             <li><i class="fi fi-rr-messages"></i></li>
             <li><i class="fi fi-ss-user"></i></li>
           </ul>
+          <div class="search-icon">
+            <i class="fi fi-br-search"></i>
+          </div>
           <form action="#" method="get">
             <div class="search-wrapper">
               <input type="text" name="search" placeholder="Search...">
@@ -35,11 +41,11 @@
         </nav>
       </header>
       
+      
       <div class="text-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ex auctor, justo sodales, eu iaculis mauris hendrerit.</p>
-        <p>Suspendisse porttitor lectus vel justo sodales, eu iaculis mauris hendrerit. </p>
+        <p><span style="color: red;">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ex auctor, justo sodales, eu iaculis mauris hendrerit.</p>
       </div>
-      <hr>
+
       
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">

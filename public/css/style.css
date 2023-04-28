@@ -3,7 +3,44 @@
     margin: 0;
     padding: 0;
 }
-header {
+#img1 {display:block;}
+#img2 {display:none}
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px;
+  }
+  footer {
+    margin-top: 5%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .right-container a {
+    color: #fff;
+    margin-left: 20px;
+  }
+  
+  .left-container img {
+    height: 80px;
+    width: auto;
+  }
+  .search-icon {
+    display: none;
+  }
+  header {
     margin: 1%;
     height: 100px;
     display: flex;
@@ -18,10 +55,12 @@ header {
     height: 80px;
     width: auto;
   }
+  
   nav {
     display: flex;
     justify-content: space-between;
   }
+  
   nav ul {
     display: flex;
     list-style: none;
@@ -54,6 +93,7 @@ header {
     font-size: 16px;
     width: 200px;
   }
+  
   form button {
     padding: 10px;
     background-color: #333;
@@ -82,14 +122,15 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+    width: 200px; /* Add this */
   }
-
+  
   input[type="text"] {
     padding-right: 35px;
     border: none;
     background: transparent;
   }
-
+  
   button[type="submit"] {
     position: absolute;
     right: 0;
@@ -97,35 +138,25 @@ header {
     border: none;
     color: gray;
   }
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 10px;
-  }
-  footer {
-    margin-top: 5%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
   
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  @media only screen and (max-width: 600px) {
+    #img1 {display: none;}
+    #img2 {display: block;}
+    /* Hide the search bar by default */
+    .search-wrapper {
+      display: none;
+    }
   
-  .right-container a {
-    color: #fff;
-    margin-left: 20px;
-  }
-  
-  .left-container img {
-    height: 80px;
-    width: auto;
+    /* Show the search icon */
+    .search-icon {
+      display: flex;
+    }
+    .logo img{
+        height: 60px;
+        width: auto;
+    }
+    header {
+        height: auto;
+    }
   }
   
