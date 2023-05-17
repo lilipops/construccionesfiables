@@ -1,22 +1,22 @@
 :root {
-    --primColor: #dcdcdc;
+    --primColor: #ffffff;
     --secoColor: #555555;
     --cornerRad: 4px;
   }
   body {
     font-family: Arial, Helvetica, sserif;
   }
-  details {
+  /* details {
     margin: 40px;
-  }
+  } */
   summary {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
-    width: 23px;
+    width: 24px;
     height: 17px;
     background-color: var(--primColor);
-    border: 2px solid var(--secoColor);
+    border: 1px solid var(--secoColor);
     border-radius: var(--cornerRad);
     color: var(--secoColor);
     cursor: pointer;
@@ -59,6 +59,8 @@
     content: "";
   }
   .menu {
+    position: absolute;
+    z-index: 9999;
     height: 0;
     width: fit-content;
     border-radius: var(--cornerRad);
@@ -108,4 +110,11 @@
       opacity: 0;
     }
   }
+ 
   
+
+ 
+  
+ 
+  
+ 
