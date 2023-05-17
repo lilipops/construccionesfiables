@@ -44,7 +44,24 @@ a {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
+  
+  /* Rest of the CSS code... */
+  
+  /* header {
+    
+    margin: 1%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 0 20px;
+  } */
   .left-header-part {
     display: flex;
     align-items: center;
